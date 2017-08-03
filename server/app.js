@@ -13,7 +13,9 @@ var kittens = require('./kittens'); // dot-slash in front tells node to look in 
 
 // var kittens is set to whatever kittens.js assigns to module.exports
 
-// log the array of kittens
+console.log(kittens.greeting); // log the greeting
+
+// log kittens' module.exports{}
 console.log(kittens);
 
 var kittiesArr = kittens.kittensKey;
@@ -22,7 +24,7 @@ var kittiesArr = kittens.kittensKey;
 for (var i = 0; i < kittiesArr.length; i++) {
     var name = kittiesArr[i].name;
     var fur = kittiesArr[i].furColor;
-    
+
     console.log(name + '\'s fur color is ' + fur);   
 }
 

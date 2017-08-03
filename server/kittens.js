@@ -13,4 +13,7 @@ var kittensArr = [
     }
 ];
 
-module.exports = {kittensKey: kittensArr};
+module.exports = {
+    greeting: 'bienvenidos, hombre!',
+    kittensKey: kittensArr
+};

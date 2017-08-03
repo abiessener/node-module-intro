@@ -2,7 +2,7 @@
 
 function reduceArray(arrayToReduce){
     var total = 0;
-    
+
     for (var i = 0; i  < arrayToReduce.length; i++) {
         total += arrayToReduce[i];
     }
@@ -10,7 +10,7 @@ function reduceArray(arrayToReduce){
     return total;
 }
 
-console.log(reduceArray([1,3,4,2,5]))
+// console.log(reduceArray([1,3,4,2,5]))
 module.exports = {
     arraySum: reduceArray
 }

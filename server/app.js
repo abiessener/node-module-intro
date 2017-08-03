@@ -14,11 +14,19 @@ var kittens = require('./kittens'); // dot-slash in front tells node to look in 
 // var kittens is set to whatever kittens.js assigns to module.exports
 
 // log the array of kittens
-
 console.log(kittens);
 
+var kittiesArr = kittens.kittensKey;
 
-app.listen(port, function(){
-    console.log('listening on port',port);
+// log all kittens and their furColors
+for (var i = 0; i < kittiesArr.length; i++) {
+    var name = kittiesArr[i].name;
+    var fur = kittiesArr[i].furColor;
     
-})
+    console.log(name + '\'s fur color is ' + fur);   
+}
+
+// app.listen(port, function(){
+//     console.log('listening on port',port);
+    
+// })
